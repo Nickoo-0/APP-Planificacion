@@ -1,0 +1,48 @@
+{
+  "name": "Horario atención Chile",
+  "timeZone": "America/Santiago",
+  "weekly": {
+    "0": [],
+    "1": [
+      {
+        "start": "08:30",
+        "end": "18:30"
+      }
+    ],
+    "2": [
+      {
+        "start": "08:30",
+        "end": "18:30"
+      }
+    ],
+    "3": [
+      {
+        "start": "08:30",
+        "end": "18:30"
+      }
+    ],
+    "4": [
+      {
+        "start": "08:30",
+        "end": "18:30"
+      }
+    ],
+    "5": [
+      {
+        "start": "08:30",
+        "end": "14:30"
+      }
+    ],
+    "6": []
+  },
+  "holidays": [],
+  "exceptions": [
+    {
+      "date": "2026-10-15",
+      "type": "CLOSE",
+      "start": "15:53",
+      "end": "15:57",
+      "name": "interno"
+    }
+  ]
+}
