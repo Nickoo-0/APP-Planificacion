@@ -1,24 +1,18 @@
-# Horario Chile API v2
+# Horario Chile API para Vercel
 
-Ejecutar con Node.js 18 o superior:
+## Variables de entorno obligatorias
 
-```bash
-npm start
-```
+- `ADMIN_USER`
+- `ADMIN_PASSWORD`
+- `KV_REST_API_URL` y `KV_REST_API_TOKEN`
 
-Abrir `http://localhost:3000`.
+También acepta los nombres de Upstash:
 
-## Actualización desde v1
+- `UPSTASH_REDIS_REST_URL`
+- `UPSTASH_REDIS_REST_TOKEN`
 
-1. Detener `npm start` con `Ctrl+C`.
-2. Respaldar el archivo anterior `data/config.json`.
-3. Reemplazar `server.js` y la carpeta `public` por los de esta versión.
-4. En el `config.json` existente, añadir antes de la última llave:
+## Vercel
 
-```json
-,"exceptions": []
-```
+Configura **Root Directory** como `horario-chile-api-v2` si estos archivos están dentro de esa carpeta del repositorio.
 
-5. Ejecutar nuevamente `npm start`.
-
-El endpoint de Lynn continúa siendo `GET /api/status` y conserva `esHorarioHabil` y `flujoActivo`.
+La administración está en `/` y requiere autenticación básica. Lynn consulta públicamente `GET /api/status`.
